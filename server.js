@@ -9,7 +9,7 @@ const clientpath = `${__dirname}/../client`;
 app.use("/src/",express.static(clientpath));
 
 app.get('/', (req, res) => {
-    res.sendFile(path.resolve(`${clientpath}/_index.html`));
+    res.sendFile(path.resolve(`${clientpath}/client.html`));
 })
 
 app.get('/host', (req, res) => {
