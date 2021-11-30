@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/host', (req, res) => {
-    res.sendFile(path.resolve(`${clientpath}/hostIndex.html`));
+    res.sendFile(path.resolve(`${clientpath}/host.html`));
 })
 
 app.listen(port, () => {
